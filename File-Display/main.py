@@ -1,7 +1,24 @@
 #
-# Name
-# Date
+# Dr. Tammy Robertson
+# 11/11/2023
 # File Display Programming Project
 # COSC 1010
 #
-# Use comments liberally throughout the program. 
+def main():
+    # Declare local variables
+    contents = ''
+    
+    # Open numbers.txt file for reading
+    infile = open('numbers.txt', 'r')
+
+    # Read in data and store in content
+    contents = infile.read()
+
+    # Close file
+    infile.close()
+
+    # Print contents
+    print(contents)
+
+# Call the main function.
+main()
